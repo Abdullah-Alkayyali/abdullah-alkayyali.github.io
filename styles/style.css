@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /* Makes it so when you set a height it includes the size of padding, margin, and border */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --text: #f0f0f1;
+    --background: #0d1014;
+    --primary: #92abd4;
+    --secondary: #1d4483;
+    --accent: #2470ec;
+    --gray: #26282c
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: var(--text);
+    height: 100vh;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

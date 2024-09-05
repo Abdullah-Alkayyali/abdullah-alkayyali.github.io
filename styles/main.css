@@ -1,0 +1,119 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+.main-heading {
+    color: var(--primary);
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 7rem;
+    font-weight: 300;
+}
+
+.main-body{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.uni{
+    color: #dd6e73;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.uni::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: #dd6e73;
+    transition: 300ms;
+}
+
+.uni:hover::after {
+    width: 100%;
+}
+
+.main-sub {
+    margin-top: 50px;
+    line-height: 60px;
+    font-size: 2rem;
+    vertical-align: center;
+    color: var(--primary);
+}
+
+.svg {
+    /* border: 2px red solid; */
+    filter: invert(32%) sepia(30%) saturate(6758%) hue-rotate(210deg) brightness(98%) contrast(88%);
+}
+
+.location-svg {
+    display: inline-block;
+    transform: translateY(5px);
+    height: 35px;
+    width: 35px;
+    
+}
+
+.linkedin-svg{
+    height: 35px;
+    transform: translateY(9px);
+    width: 35px;
+}
+
+.github-svg {
+    margin-top: 10px;
+    height: 30px;
+    width: 35px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .main-heading{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .main-body{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .main-sub {
+        text-align: center;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main-heading{
+        font-size: 5rem;
+    }
+
+    .main-body{
+        width: 10em;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main-heading {
+        font-size: 7rem;
+        text-align: start;
+    }
+    
+    .main-body{
+        width: 100%;
+        font-size: 3rem;
+    }
+}
